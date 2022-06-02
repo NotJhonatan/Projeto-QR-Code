@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Feira de Profissões INSF</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <center>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand" style="color:lightgray;">Feira de Profissões ISNSF</span>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Página Inicial", "Index", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("Térreo", "Terreo", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("Avaliação", "Avaliacao", "Feira", new { style = "color:lightgray;" })</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    <footer id="colophon">
+        <br />
+        <div style="float:right; margin-right:40px;">
+            <h6 style="font-size:14px; margin-left:40px">Menu</h6>
+            <ul>
+                <li>@Html.ActionLink("Térreo", "Terreo", "Feira", new { style = "color:lightgray;" })</li>
+                <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira", new { style = "color:lightgray;" })</li>
+                <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+            </ul>
+        </div>
+
+        <div style="text-align:left; color:lightgray">
+            <h6 style="font-size:14px; margin-left: 40px;">Cursos</h6>
+            <ul>
+                <li><a href="https://acaonsfatima.org.br/cursos/implantacao-de-redescopiar/" style="color:lightgray">Inglês - Nível Básico ao Intermediário</a></li>
+                <li><a href="https://acaonsfatima.org.br/cursos/eletromecanica/" style="color:lightgray">Qualificação em Eletromecânica</a></li>
+                <li><a href="https://acaonsfatima.org.br/cursos/eletrotecnica/" style="color:lightgray">Qualificação em Eletrotécnica</a></li>
+                <li><a href="https://acaonsfatima.org.br/cursos/secretariado/" style="color:lightgray"> Técnico em Secretariado</a></li>
+                <li><a href="https://acaonsfatima.org.br/cursos/administracao-de-empresas/" style="color:lightgray">Técnico em Administração</a></li>
+                <li><a href="https://acaonsfatima.org.br/cursos/informatica/" style="color:lightgray">Técnico em Informatica</a></li>
+                <li><a href="https://acaonsfatima.org.br/cursos/comunicacao-visual/" style="color:lightgray">Técnico em Comunicação Visual</a></li>
+
+            </ul>
+        </div>
+
+        <br />
+
+        <h6 style="font-size:14px; margin-left: 20px;">Siga-nos</h6>
+        <div style="margin-left:20px; display: flex">
+            <div>
+                <a href="https://www.facebook.com/Instituto-Social-Nossa-Senhora-de-F%C3%A1tima-230903353703049/" target="_blank" title="Facebook">
+                    <img src="https://escolapinheiro.com.br/wp-content/uploads/2018/09/if_facebook_circle_color_107175.png">
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/?lang=pt-br" target="_blank" title="Twitter">
+                    <img src="https://escolapinheiro.com.br/wp-content/uploads/2018/09/if_twitter_circle_color_107170.png">
+                </a>
+            </div>
+            <div class="pr-2">
+                <a href="https://www.instagram.com/acaonsfatima/?hl=pt-br" target="_blank" title="Instagram">
+                    <img src="https://escolapinheiro.com.br/wp-content/uploads/2019/03/Webp.net-resizeimage-2.png">
+                </a>
+            </div>
+        </div>
+
+        <br />
+
+        <div>
+            <img style="margin-left: 20px" class="pr-2" src="https://escolapinheiro.com.br/wp-content/themes/escola-pinheiro/dist/images/phone.png">
+            <span class="d-inline-block">
+                (011) 5687-8876
+            </span>
+        </div>
+
+        <br />
+
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

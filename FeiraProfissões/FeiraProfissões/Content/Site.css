@@ -1,0 +1,399 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.dl-horizontal dt{
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.imagemAvaliacao {
+    background-image: url(https://avaliacaodepessoas.com.br/wp-content/uploads/2016/07/avalia%C3%A7%C3%A3o.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:400px; 
+}
+
+.estrelas{
+    font-size: 50px;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.fa:before {
+    content: '\f005';
+    color: #FC0;
+}
+
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}
+
+#colophon {
+    background: #222;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    color: lightgray;
+    font-size: 14px;
+}
+
+body{
+    color: #666;
+}
+
+::selection {
+    background-color: #fa394a;
+    color: #fff !important;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.slideshow-container, .salas, .imagemAvaliacao{
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+#terreo {
+    background-image: url(../Imagens/imgTerreo.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#primeiroAndar {
+    background-image: url(../Imagens/img1Andar.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#segundoAndar {
+    background-image: url(../Imagens/img2Andar.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#terceiroAndar {
+    background-image: url(../Imagens/img3Andar.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#terreo:hover{
+    opacity: 0.5;
+}
+
+#primeiroAndar:hover{
+    opacity: 0.5;
+}
+
+#segundoAndar:hover{
+    opacity: 0.5;
+}
+
+#terceiroAndar:hover{
+    opacity: 0.5;
+}
+
+.navegador {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.entry-content {
+    text-align:justify;
+}
+
+#parceiros{
+    text-align: center;
+}
+
+#p1{
+    width: 60px;
+    height: 65px;
+}
+
+#p2 {
+    width: 100px;
+    height: 100px;
+}
+
+#p3 {
+    width: 100px;
+    height: 100px;
+}
+
+#p4 {
+    width: 75px;
+    height: 75px;
+}
+
+#p5 {
+    width: 100px;
+    height: 25px;
+}
+
+#p6 {
+    width: 100px;
+    height: 75px;
+}
+
+#p7 {
+    width: 100px;
+    height: 60px;
+}
+
+#p8 {
+    width: 100px;
+    height: 100px;
+}
+
+#p9 {
+    width: 100px;
+    height: 75px;
+}
+
+#p10 {
+    width: 100px;
+    height: 25px;
+}
+
+#p11 {
+    width: 100px;
+    height: 100px;
+}
+
+.popuptext {
+    font-size: 50px
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    /* The actual popup (appears on top) */
+    .popup .popuptext {
+        visibility: hidden;
+        width: 100%;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        margin-left: -80px;
+        font-size: 50px;
+    }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+    }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mySlides{
+        height: 350px;
+    }
+
+    .popup .popuptext {
+        font-size: 30px;
+    }
+
+    .estrelas{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .mySlides{
+        height: 400px;
+    }
+
+    .popup .popuptext {
+        font-size: 30px;
+    }
+
+    .estrelas{
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .mySlides{
+        height: 410px;
+    }
+
+    .popup .popuptext {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .mySlides{
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .mySlides{
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mySlides{
+        height: 840px;
+    }
+
+    .popup .popuptext {
+        font-size: 50px;
+    }
+
+    .estrelas{
+        font-size: 120px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .mySlides{
+        height: 1110px;
+    }
+
+    .popup .popuptext {
+        font-size: 50px;
+    }
+
+     .estrelas {
+        font-size: 160px;
+    }
+}

@@ -1,0 +1,209 @@
+﻿.Info {
+    background-color: RGB(0,0,0);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 13px;
+    padding-right: 35px;
+    text-align: right;
+    text-align: justify;
+}
+
+.img{
+    background-color: royalblue;
+}
+.Contab {
+    background-color: RGB(0,0,0);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin-left: -15px;
+    margin-right: -10px;
+    width: 105%;
+    padding: 20px 0;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 28px;
+    text-align: left;
+    text-align: justify;
+}
+
+.sala4{
+    background-color: RGB(0,93,134);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    position: center;
+    color: white;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.cedesp{
+    background-color: RGB(0,93,134);
+    color: white;
+    text-align: right;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    text-align: justify;
+}
+
+.Empreen {
+    background-color: RGB(0,93,134);
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 25px;
+    text-align: right;
+    text-align: justify;
+}
+
+
+
+.sala {
+    color: white;
+    font-size: 25px;
+    position: center;
+    
+}
+.sala1 {
+    color: white;
+    font-size: 25px;
+    position: center;
+}
+
+.figura1 {
+    float: left;
+    margin-left: -10px;
+    margin-right: 15px;
+   padding-left:15px;
+     object-fit: fill;
+    background-size: cover;
+}
+.cedes{
+    float: right;
+    margin: 0 10px 10px;
+    background-size: cover;
+    object-fit: fill;
+}
+.figura2 {
+    float: right;
+    margin: 0 5px 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-size: cover;
+    object-fit: fill;
+}
+.frase {
+    background-color: RGB(0, 0, 0);
+    color: white;
+    display: block;
+    padding: 20px 0;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 25px;
+    text-align: justify;
+}
+
+.fonte {
+    text-align: center;
+    font-size: 15px;
+}
+
+.andar_content {
+    margin-left: -20px;
+    width: 115%;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.andar {
+
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+
+.Eletrica {
+    background-color: RGB(0,0,0);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    position: center;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 25px;
+    text-align: justify;
+}
+
+
+.Tecnica {
+    background-color: RGB(0,93,134);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 25px;
+    text-align: left;
+    text-align: justify;
+}
+
+.titulo {
+    text-align: center;
+    font-size: -15px;
+    font-weight: bold;
+}
+.Eletro {
+    float: left;
+    margin-left: 1px;
+    margin-right: 10px;
+    object-fit: fill;
+    background-size: cover;
+}

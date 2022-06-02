@@ -1,0 +1,109 @@
+﻿@{
+                /**/
+
+                ViewBag.Title = "Página Inicial";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade" style="background-image:url(../../Imagens/feiraLogo.jpeg)">
+    </div>
+
+    <div class="mySlides fade" style="background-image:url('../../Imagens/Predio Frei.jpg')">
+    </div>
+    
+    <div class="mySlides fade" style="background-image: url(https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg)">
+    </div>
+</div>
+
+<div style="text-align:center" class="navegador">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="entry-content">
+    <p><strong>No dia 21 de Setembro de 2019</strong>, o <strong>primeiro evento</strong> organizado por nós especialmente para você que tem dúvidas sobre como funciona o <strong>Mundo do Trabalho</strong>, como se comportar, o que cada área realiza e muitas outras curiosidades que te ajudarão a conhecer o ambiente profissional!</p>
+    <p>Teremos vários <strong>temas especiais</strong> com atividades interativas de cada curso (<strong>inclusive o CEDESP</strong>), <strong>Sebo</strong> com livros de diversos assuntos e livros <strong>escritos pelo próprio Frei Xavier</strong>, além dos stands de alguns dos nossos parceiros.</p>
+    <p>Veja nossa programação, marque a data na sua agenda e chame todos para participar.</p>
+    <p><strong>Evento gratuito! Não perca!</strong></p>
+    <p>&nbsp;</p>
+</div>
+
+<div class="salas">
+
+    <a href='@Url.Action("Terreo", "Feira")'>
+        <div id="terreo">
+            Térreo
+        </div>
+    </a>
+
+    <a href='@Url.Action("PrimeiroAndar", "Feira")'>
+        <div id="primeiroAndar">
+            1º Andar
+        </div>
+    </a>
+
+    <a href='@Url.Action("SegundoAndar", "Feira")'>
+        <div id="segundoAndar">
+            2º Andar
+        </div>
+    </a>
+
+    <a href='@Url.Action("TerceiroAndar", "Feira")'>
+        <div id="terceiroAndar">
+            3º Andar
+        </div>
+    </a>
+
+</div>
+
+<br />
+
+<h1 style="color: black; text-align:center;">Parceiros</h1>
+
+<div id="parceiros">
+    <img id="p1" src="~/Imagens/logo.png" />
+    <img id="p2" src="https://www.perfilcontabil.com.br/wp-content/uploads/2018/08/Prefeitura-de-S%C3%A3o-Paulo.png" />
+    <img id="p3" src="https://images.sympla.com.br/5c964feab47ab.png" />
+    <img id="p4" src="https://whatsrel.com.br/wp-content/uploads/2019/08/stb-logo-c%C3%B3pia.jpg" />
+    <img id="p5" src="https://www.expoopticabrasil.com/wp-content/uploads/2019/01/cropped-logo.png" />
+    <img id="p6" src="http://www.casion.com.br/img/social_logo_on.jpg" />
+    <img id="p7" src="http://159.203.175.70/wp-content/uploads/2015/04/logo-saopauloopencentre.jpg" />
+    <img id="p8" src="https://yt3.ggpht.com/a/AGF-l78k32uLjygj1iEGTzKhBVzwhEv3kit9f-OqoA=s900-c-k-c0xffffffff-no-rj-mo" />
+    <img id="p9" src="http://raizesds.com.br/wp-content/uploads/2016/10/sebrae-logo.jpg" />
+    <img id="p10" src="https://www.viacaograjau.com.br/wp-content/uploads/2019/05/viacao-grajau-logotipo.png" />
+    <img id="p11" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqvHlDuH2RyUjw3YoP9oT7a-oIOpCrwO7WIvhWcBivNMuE3FF" />
+</div>
+
+<br />
+
+<p>&nbsp;</p>
+<h1 style="color: black; text-align:center;">Como Chegar</h1>
+<p>&nbsp;</p>
+
+<iframe src="https://maps.google.com/maps?q=av.%20coronel%20octaviano%20costa%2C%20463&t=&z=15&ie=UTF8&iwloc=&output=embed" height="450" frameborder="0" style="border:0; width:110%; margin-left:-15px" allowfullscreen="" ;></iframe>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+    }
+</script>

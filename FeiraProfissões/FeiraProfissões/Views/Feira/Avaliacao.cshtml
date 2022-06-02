@@ -1,0 +1,63 @@
+﻿@model FeiraProfissões.Models.tb_avaliacao
+
+    @{
+        ViewBag.Title = "Avaliacao";
+    }
+
+    <script>
+        function EnviarAvaliacao() {
+            var form = document.getElementById('formAvaliacao');
+            form.submit();
+
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/Site.css">
+
+<div class="imagemAvaliacao">
+</div>    
+
+    <h1 style="text-align:center; color:black"><b>O que Achou da Feira?</b></h1>
+
+    @using (Html.BeginForm("Avaliacao", "Feira", FormMethod.Post, new { id = "formAvaliacao" }))
+    {
+        @Html.AntiForgeryToken()
+        <center>
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="popup">
+
+
+                    <div class="estrelas">
+                        <input type="radio" id="vazio" name="estrela" value="" checked />
+
+                        <label for="estrela_um"><i class="fa"></i></label>
+                        <input type="radio" id="estrela_um" name="estrela" value="1" onclick="EnviarAvaliacao();" />
+                        <span class="popuptext" id="myPopup">Obrigado pela Avaliação</span>
+
+                        <label for="estrela_dois"><i class="fa"></i></label>
+                        <input type="radio" id="estrela_dois" name="estrela" value="2" onclick="EnviarAvaliacao();" />
+
+                        <label for="estrela_tres"><i class="fa"></i></label>
+                        <input type="radio" id="estrela_tres" name="estrela" value="3" onclick="EnviarAvaliacao();" />
+
+                        <label for="estrela_quatro"><i class="fa"></i></label>
+                        <input type="radio" id="estrela_quatro" name="estrela" value="4" onclick="EnviarAvaliacao();" />
+
+                        <label for="estrela_cinco"><i class="fa"></i></label>
+                        <input type="radio" id="estrela_cinco" name="estrela" value="5" onclick="EnviarAvaliacao();" />
+
+                    </div>
+                    @Html.ValidationMessageFor(model => model.qt_estrelas, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </center>
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
